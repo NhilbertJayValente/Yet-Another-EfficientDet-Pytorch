@@ -82,7 +82,7 @@ class ModelWithLoss(nn.Module):
 
 
 def train(opt):
-    params = Params(f'COCO/{opt.project}.yml')
+    params = Params(f'content/drive/Shareddrives/SP-Mapuslan_Version.2/OLD-DATASET/{opt.project}.yml')
 
     if params.num_gpus == 0:
         os.environ['CUDA_VISIBLE_DEVICES'] = '-1'
